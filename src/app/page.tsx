@@ -16,7 +16,8 @@ import {
   TrendingUp,
   Terminal,
   Cpu,
-  Database
+  Database,
+  Youtube
 } from "lucide-react";
 
 // Data
@@ -274,7 +275,7 @@ export default function Home() {
                   {project.icon}
                 </div>
                 <h3 className="text-xl font-bold text-black mb-3">{project.title}</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed h-12">{project.desc}</p>
+                <p className="text-gray-600 mb-8 leading-relaxed">{project.desc}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map(t => (
                     <span key={t} className="text-[10px] font-bold uppercase tracking-wider text-gray-400 border border-gray-200 px-2 py-1">
@@ -312,13 +313,25 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-12 border-t border-gray-100 text-center bg-white">
-        <div className="flex flex-col items-center gap-4">
-          <a
-            href="mailto:jeromwolf@gmail.com"
-            className="text-sm font-medium text-gray-500 hover:text-black transition-colors"
-          >
-            jeromwolf@gmail.com
-          </a>
+        <div className="flex flex-col items-center gap-6">
+          <div className="flex items-center gap-6">
+            <a
+              href="mailto:jeromwolf@gmail.com"
+              className="text-sm font-medium text-gray-500 hover:text-black transition-colors"
+            >
+              jeromwolf@gmail.com
+            </a>
+            <div className="w-px h-4 bg-gray-200" />
+            <a
+              href="https://www.youtube.com/@ontology-hub"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-gray-500 hover:text-red-600 transition-colors flex items-center gap-2"
+            >
+              <Youtube className="w-4 h-4" />
+              <span>Ontology Hub</span>
+            </a>
+          </div>
           <p className="text-xs font-mono text-gray-400 uppercase tracking-widest">
             © {new Date().getFullYear()} Root Bricks Inc.
           </p>
