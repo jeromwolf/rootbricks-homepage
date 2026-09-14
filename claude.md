@@ -57,7 +57,7 @@ rootbricks/
 ## 주요 섹션
 
 1. **Hero** - 타이핑 애니메이션이 있는 메인 배너
-2. **Core Services** - AI Agent, RAG & Knowledge Graph, System Integration
+2. **Core Services** - AI Agent, RAG & Knowledge Graph, System Integration, Embedded & IoT
 3. **AI Solutions** - GitHub 연동 프로젝트 목록
 4. **Deployed Systems** - 실제 배포된 시스템 포트폴리오
 5. **Operational History** - 경력 타임라인 (2001~현재)
@@ -70,6 +70,9 @@ npm run dev      # 개발 서버 시작 (localhost:3000)
 npm run build    # 프로덕션 빌드
 npm run start    # 프로덕션 서버 시작
 npm run lint     # ESLint 실행
+npm test         # Playwright E2E 테스트 (11개 그룹 병렬)
+npm run test:ui  # Playwright UI 모드
+npm run test:report  # 마지막 테스트 리포트 열기
 ```
 
 ## 코딩 컨벤션

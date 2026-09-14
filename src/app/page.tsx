@@ -161,7 +161,7 @@ export default function Home() {
       {/* Core Services - What We Do */}
       <section className="py-24 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 md:px-20">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="space-y-4">
               <div className="w-12 h-12 bg-black text-white flex items-center justify-center rounded-lg mb-6">
                 <Brain className="w-6 h-6" />
@@ -187,6 +187,15 @@ export default function Home() {
               <h3 className="text-xl font-bold">System Integration</h3>
               <p className="text-gray-500 leading-relaxed">
                 20년 이상의 <strong>임베디드 및 대규모 서버 개발 경험</strong>을 바탕으로, 최신 AI 기술을 기존 레거시 시스템에 완벽하게 통합(Integration)합니다.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <div className="w-12 h-12 bg-black text-white flex items-center justify-center rounded-lg mb-6">
+                <Cpu className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold">Embedded &amp; IoT</h3>
+              <p className="text-gray-500 leading-relaxed">
+                VoIP 단말과 산업용 PDA부터 레이더 데이터 처리까지 <strong>20년간 현장의 하드웨어</strong>를 다뤄왔습니다. 센서에서 올라온 신호를 쓸 수 있는 데이터로 바꾸고, 그 위에 AI를 올립니다.
               </p>
             </div>
           </div>
